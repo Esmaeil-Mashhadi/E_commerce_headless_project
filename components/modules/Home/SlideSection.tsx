@@ -7,10 +7,11 @@ import Image from "next/image"
 import "swiper/css"
 import "swiper/css/pagination"
 import { Autoplay, Pagination } from "swiper/modules"
-import { IoIosArrowDropright } from "react-icons/io";
+import { IoIosArrowDropright } from "react-icons/io"
 
 import { useEffect, useState } from "react"
 import Link from "next/link"
+import { EdgeSvg } from "@/utils/svgs"
 
 const SlideSection = () => {
   const sliderImages: sliderImagesType[] = [
@@ -27,19 +28,19 @@ const SlideSection = () => {
     alt: string
   }
 
-//   useEffect(() => {
-//     const interval = setInterval(() => {
-//       if (sliderImages.length - 1 >= discountImageIndex) {
-//         setDiscountImageIndex(0)
-//       } else {
-//         setDiscountImageIndex((prev) => prev++)
-//       }
-//     }, 1000)
+  //   useEffect(() => {
+  //     const interval = setInterval(() => {
+  //       if (sliderImages.length - 1 >= discountImageIndex) {
+  //         setDiscountImageIndex(0)
+  //       } else {
+  //         setDiscountImageIndex((prev) => prev++)
+  //       }
+  //     }, 1000)
 
-//     return () => {
-//       clearInterval(interval)
-//     }
-//   }, [discountImageIndex])
+  //     return () => {
+  //       clearInterval(interval)
+  //     }
+  //   }, [discountImageIndex])
 
   return (
     <div className={styles.container}>
@@ -52,10 +53,16 @@ const SlideSection = () => {
             alt={sliderImages[discountImageIndex].alt}
           />
           <div className={styles.outerLayerDiscount}>
-            <Link  href="/">
+            <div className={styles.right}> 
+              <EdgeSvg />
+            </div>
+            <Link href="/">
               <IoIosArrowDropright />
               <p>مشاهده ی تخفیفات </p>
             </Link>
+            <div className={styles.top}>
+              <EdgeSvg />
+            </div>
           </div>
         </div>
 

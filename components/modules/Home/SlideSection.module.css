@@ -1,138 +1,129 @@
-.container{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 30px;
-    height:550px ;
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  height: 550px;
 }
 
-.discountSection{
-    width: 50%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+.discountSection {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
-.discountSection img{
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
+.discountSection img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
 }
-.imageContainer{
-    position: relative;
-    height: 90%;
-}
-
-.outerLayerDiscount{
-    background: var(--whole-bg);
-    position: absolute;
-    left: -10px;
-    bottom: 0px;
-    border-top-right-radius: 20px;
-    width: 150px;
-    height: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.imageContainer {
+  position: relative;
+  height: 100%;
 }
 
-.outerLayerDiscount::after{
-    content: "";
-    background: var(--whole-bg);
-    height: 35px;
-    background: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M20 20L20 0C20 11.0457 11.0457 20 0 20H20Z' fill='white'/%3E%3C/svg%3E");
-    width: 25px;
-    position: absolute;
-    right: -19px;
-    bottom: -6px;
-    border-bottom-left-radius: 50%;
-    background-size: contain;
-    transform: rotate(90deg);
-}
-.outerLayerDiscount::before{
-    content: "";
-    background: var(--whole-bg);
-    height: 35px;
-    background: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M20 20L20 0C20 11.0457 11.0457 20 0 20H20Z' fill='white'/%3E%3C/svg%3E");
-    width: 25px;
-    position: absolute;
-    top: -24px;
-    left: 9px;
-    border-bottom-left-radius: 50%;
-    background-size: contain;
-    transform: scaleX(-1) rotate(0deg);
+.outerLayerDiscount {
+  background: var(--whole-bg);
+  position: absolute;
+  left: -10px;
+  bottom: 0px;
+  border-top-right-radius: 20px;
+  width: 150px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.outerLayerDiscount a{
-    background: var(--secondaryColor);
-    color: white;
-    border-radius: 20px;
-    width: 90%;
-    font-size: 12px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    padding: 12px 5px;
+.right svg {
+  content: "";
+  color: var(--whole-bg);
+  height: 35px;
+  width: 35px;
+  position: absolute;
+  right: -35px;
+  bottom: -.5px;
+  transform: rotate(90deg);
 }
-.outerLayerDiscount a svg{
-    scale: 2;
-}
-
-
-.timerCounter{
-    height: 50%;
-    border: dashed var(--lightBG) 2.5px;
-    border-radius: 5px;
-    display:flex;
-    align-items: center;
-    justify-content: space-around;
-    gap: 5px;
+.top svg {
+  content: "";
+  color: var(--whole-bg);
+  height: 35px;
+  width: 35px;
+  position: absolute;
+  top: -34.5px;
+  left: 10px;
+  transform: scaleX(-1) rotate(0deg);
 }
 
+.outerLayerDiscount a {
+  background: var(--secondaryColor);
+  color: white;
+  border-radius: 20px;
+  width: 90%;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 12px 5px;
+}
+.outerLayerDiscount a svg {
+  scale: 2;
+}
 
-.timerCounter div{
- box-shadow: 0px 0px 5px black;
- background:var(--lightBG);
- width: 70px;
- height: 70px;
- border-radius: 50%;
- display: flex;
- flex-direction: column;
- align-items: center;
- justify-content: center;
- font-weight: bold;
+.timerCounter {
+  height: 50%;
+  border: dashed var(--lightBG) 2.5px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 5px;
+}
+
+.timerCounter div {
+  box-shadow: 0px 0px 5px black;
+  background: var(--lightBG);
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
 }
 
 .slider {
-    height: 100%;
-    width: 65%;
+  height: 100%;
+  width: 65%;
 }
 
-.mySwiper{
-    width: 100%;
-    height: 100%;
+.mySwiper {
+  width: 100%;
+  height: 100%;
 }
- 
-.mySwiper img{ 
-    height: 100%;
-    width: 100%;
-    border-radius: 10px;
+
+.mySwiper img {
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
 }
-.mySwiper :global(.swiper-wrapper){
-    width: 100%;
+.mySwiper :global(.swiper-wrapper) {
+  width: 100%;
 }
-.mySwiper :global(.swiper-pagination-bullet){
+.mySwiper :global(.swiper-pagination-bullet) {
   width: 30px;
   height: 30px;
   background: var(--secondaryColor);
 }
 
-
-.mySwiper :global(.swiper-pagination-bullet-active-next){
-    background-color: var(--whole-bg);
-    opacity: .5;
+.mySwiper :global(.swiper-pagination-bullet-active-next) {
+  background-color: var(--whole-bg);
+  opacity: 0.5;
 }
-.mySwiper :global(.swiper-pagination-bullet-active-prev){
-    background-color: var(--whole-bg);
-    opacity: .5;
+.mySwiper :global(.swiper-pagination-bullet-active-prev) {
+  background-color: var(--whole-bg);
+  opacity: 0.5;
 }
