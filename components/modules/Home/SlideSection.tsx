@@ -11,7 +11,7 @@ import { IoIosArrowDropright } from "react-icons/io"
 
 import { useEffect, useState } from "react"
 import Link from "next/link"
-import { EdgeSvg } from "@/utils/svgs"
+import CallToAction from "@/components/common/CallToAction"
 
 const SlideSection = () => {
   const sliderImages: sliderImagesType[] = [
@@ -52,18 +52,7 @@ const SlideSection = () => {
             src={sliderImages[discountImageIndex].src}
             alt={sliderImages[discountImageIndex].alt}
           />
-          <div className={styles.outerLayerDiscount}>
-            <div className={styles.right}> 
-              <EdgeSvg />
-            </div>
-            <Link href="/">
-              <IoIosArrowDropright />
-              <p>مشاهده ی تخفیفات </p>
-            </Link>
-            <div className={styles.top}>
-              <EdgeSvg />
-            </div>
-          </div>
+          <CallToAction />
         </div>
 
         <div className={styles.timerCounter}>
@@ -88,6 +77,7 @@ const SlideSection = () => {
 
       <div className={styles.slider}>
         <Swiper
+          loop={true}
           autoplay={{ delay: 2000, disableOnInteraction: true }}
           modules={[Pagination, Autoplay]}
           pagination={{ dynamicBullets: true, clickable: true }}

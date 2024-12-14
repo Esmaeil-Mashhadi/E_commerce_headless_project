@@ -1,1 +1,0 @@
-export {default as EdgeSvg} from './edge.svg'

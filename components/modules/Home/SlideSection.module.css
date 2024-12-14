@@ -21,56 +21,11 @@
 .imageContainer {
   position: relative;
   height: 100%;
+  border-radius: 5px;
+  overflow: hidden;
 }
 
-.outerLayerDiscount {
-  background: var(--whole-bg);
-  position: absolute;
-  left: -10px;
-  bottom: 0px;
-  border-top-right-radius: 20px;
-  width: 150px;
-  height: 60px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 
-.right svg {
-  content: "";
-  color: var(--whole-bg);
-  height: 35px;
-  width: 35px;
-  position: absolute;
-  right: -35px;
-  bottom: -.5px;
-  transform: rotate(90deg);
-}
-.top svg {
-  content: "";
-  color: var(--whole-bg);
-  height: 35px;
-  width: 35px;
-  position: absolute;
-  top: -34.5px;
-  left: 10px;
-  transform: scaleX(-1) rotate(0deg);
-}
-
-.outerLayerDiscount a {
-  background: var(--secondaryColor);
-  color: white;
-  border-radius: 20px;
-  width: 90%;
-  font-size: 12px;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  padding: 12px 5px;
-}
-.outerLayerDiscount a svg {
-  scale: 2;
-}
 
 .timerCounter {
   height: 50%;
