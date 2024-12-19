@@ -9,15 +9,13 @@
 }
 
 :root{
-  /* --whole-bg:  rgba(249, 252 , 255);
-  --primaryColor:linear-gradient(270deg, #90CAF9 , #B1DCEC);
-  --secondaryColor: #F7E5E1 */
-
      --primaryColor:linear-gradient(-90deg, #305160 , #416E82);
      --secondaryColor: #416E82;
      --lightBG:#CCDEE6;
      --whole-bg: #F6F9FA;
     }
+
+
 
 body{
   background-color: var(--whole-bg);

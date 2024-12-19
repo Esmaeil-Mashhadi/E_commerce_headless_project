@@ -1,15 +1,15 @@
-.container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 50px;
-    margin: auto;
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  gap: 50px;
 }
 
-.children{
-    height: calc(100vh - (250px)); 
-    max-width: 1440px;
-    width: 100%;
-    padding: 0px 50px;
+.children {
+  min-height: calc(100vh - (250px));
+  max-width: 1440px;
+  width: 100%;
+  margin-bottom: 50px;
 }

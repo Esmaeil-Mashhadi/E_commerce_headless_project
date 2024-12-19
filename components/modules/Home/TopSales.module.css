@@ -1,0 +1,81 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.headerTitle {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: fit-content;
+  font-size: 2rem;
+}
+
+.headerTitle svg {
+  width: 100%;
+  bottom: 0px;
+  color: var(--secondaryColor);
+}
+.sliderSection {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  gap: 20px;
+  height: 600px;
+}
+
+.leftSlider {
+  width: 35%;
+  height: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.rightSlider{
+    width: 65%;
+    height: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.mySwiper{
+    height: 100%;
+    width: 100%;
+}
+
+.rightSlide img{
+    height: 100%;
+    width: 100%;
+}
+
+.mySwiper {
+  height: 100%;
+}
+
+.leftSlide {
+  height: 100%;
+}
+.leftSlide img {
+  height: 100%;
+  width: 100%;
+}
+
+.mySwiper :global(.swiper-wrapper) {
+  width: 100%;
+}
+.mySwiper :global(.swiper-pagination-bullet) {
+  width: 30px;
+  height: 30px;
+  background: var(--secondaryColor);
+}
+
+.mySwiper :global(.swiper-pagination-bullet-active-next) {
+  background-color: darkslategray;
+  opacity: 0.5;
+}
+.mySwiper :global(.swiper-pagination-bullet-active-prev) {
+  background-color: darkslategray;
+  opacity: 0.5;
+}

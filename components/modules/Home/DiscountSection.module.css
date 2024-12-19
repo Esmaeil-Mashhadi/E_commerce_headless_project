@@ -1,0 +1,63 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.discountContainer{
+    height: 550px;
+    background: var(--secondaryColor);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 0px 10px ;
+}
+
+.header {
+    width: fit-content;
+    font-size: 32px;
+}
+.header svg{
+    color: var(--secondaryColor);
+}
+
+.leftSide {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    width: 15%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    height: 100%;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.leftSide svg{
+    scale: 2;
+}
+.rightSide{
+    width: 85%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.mySwiper{
+    height: 90%;
+}
+.mySwiper img{
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+}
+
+.mySwiper :global(.swiper-pagination-bullet){
+    background: var(--secondaryColor);
+    width: 12px;
+    height: 12px;
+}

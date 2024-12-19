@@ -92,7 +92,7 @@ const Header = () => {
       </div>
 
       <div
-        style={scrollY > 150 ? { position: "fixed" } : { position: "relative" }}
+        style={scrollY > 50 ? { top:0 } :undefined}
         className={styles.header}
       >
         <div className={styles.menuBar}>

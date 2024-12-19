@@ -90,6 +90,10 @@
   align-items: center;
   font-weight: bold;
   color: white;
+  z-index: 999;
+  position: fixed;
+  top: 119px;
+  transition: .2s ease;
 }
 
 .menuBar {

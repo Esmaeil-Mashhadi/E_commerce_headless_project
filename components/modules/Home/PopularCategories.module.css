@@ -1,0 +1,35 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.circle{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    font-weight: bold;
+
+}
+.circle img{
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    box-shadow: 0px 0px 15px black;
+}
+.headerTitle{
+    display: flex;
+    flex-direction: column;
+    position:relative;
+    width: fit-content;
+    font-size: 2rem;
+
+}
+
+.headerTitle svg{
+    width: 100%;
+    bottom: 0px;
+    color: var(--secondaryColor);
+}

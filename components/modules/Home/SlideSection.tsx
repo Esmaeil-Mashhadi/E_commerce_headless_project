@@ -7,10 +7,8 @@ import Image from "next/image"
 import "swiper/css"
 import "swiper/css/pagination"
 import { Autoplay, Pagination } from "swiper/modules"
-import { IoIosArrowDropright } from "react-icons/io"
 
 import { useEffect, useState } from "react"
-import Link from "next/link"
 import CallToAction from "@/components/common/CallToAction"
 
 const SlideSection = () => {
