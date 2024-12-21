@@ -2,21 +2,25 @@
 @tailwind components;
 @tailwind utilities;
 
-*{
+* {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
 }
 
-:root{
-     --primaryColor:linear-gradient(-90deg, #305160 , #416E82);
-     --secondaryColor: #416E82;
-     --lightBG:#CCDEE6;
-     --whole-bg: #F6F9FA;
-    }
+:root {
+  --primaryDark: #152226;
+  --primaryColor: #3b6476;
+  --lightBG: #ccdee6;
+  --whole-bg: #f6f9fa;
+  --shade_bg: linear-gradient(-90deg, #335665, var(--primaryColor));
+}
 
-
-
-body{
+body {
   background-color: var(--whole-bg);
 }
+
+/* *:hover { 
+  outline: 2px green solid !important;
+}
+   */

@@ -1,21 +1,21 @@
-.callToActionLink  {
-    position: absolute;
-    left: 0px;
-    bottom: 0px;
-    background: var(--secondaryColor);
-    color: white;
-    border-top-right-radius: 10px;
-    width: 145px;
-    height: 40px;
-    font-size: .875rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    padding: 12px 5px;
-    box-shadow: 5px 5px 20px var(--secondaryColor);
-    white-space: nowrap;
-  }
-  
-  .callToActionLink svg {
-    scale: 1.5;
-  }
+.callToActionLink {
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  background: var(--primaryColor);
+  color: white;
+  border-top-right-radius: 10px;
+  width: 145px;
+  height: 40px;
+  font-size: 0.875rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 12px 5px;
+  box-shadow: 5px 5px 20px var(--primaryColor);
+  white-space: nowrap;
+}
+
+.callToActionLink svg {
+  scale: 1.5;
+}

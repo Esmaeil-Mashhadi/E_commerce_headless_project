@@ -15,7 +15,7 @@
 .headerTitle svg {
   width: 100%;
   bottom: 0px;
-  color: var(--secondaryColor);
+  color: var(--primaryColor);
 }
 .sliderSection {
   display: flex;
@@ -33,21 +33,21 @@
   overflow: hidden;
 }
 
-.rightSlider{
-    width: 65%;
-    height: 100%;
-    border-radius: 10px;
-    overflow: hidden;
+.rightSlider {
+  width: 65%;
+  height: 100%;
+  border-radius: 10px;
+  overflow: hidden;
 }
 
-.mySwiper{
-    height: 100%;
-    width: 100%;
+.mySwiper {
+  height: 100%;
+  width: 100%;
 }
 
-.rightSlide img{
-    height: 100%;
-    width: 100%;
+.rightSlide img {
+  height: 100%;
+  width: 100%;
 }
 
 .mySwiper {
@@ -68,7 +68,7 @@
 .mySwiper :global(.swiper-pagination-bullet) {
   width: 30px;
   height: 30px;
-  background: var(--secondaryColor);
+  background: var(--primaryColor);
 }
 
 .mySwiper :global(.swiper-pagination-bullet-active-next) {

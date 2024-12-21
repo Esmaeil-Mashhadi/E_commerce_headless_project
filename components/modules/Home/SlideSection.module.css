@@ -25,8 +25,6 @@
   overflow: hidden;
 }
 
-
-
 .timerCounter {
   height: 50%;
   border: dashed var(--lightBG) 2.5px;
@@ -71,7 +69,7 @@
 .mySwiper :global(.swiper-pagination-bullet) {
   width: 30px;
   height: 30px;
-  background: var(--secondaryColor);
+  background: var(--primaryColor);
 }
 
 .mySwiper :global(.swiper-pagination-bullet-active-next) {
