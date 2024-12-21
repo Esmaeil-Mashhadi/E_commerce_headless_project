@@ -8,6 +8,7 @@ const ProductCard = ({ images, index }: any) => {
   return (
     <div className={styles.container}>
       <Image
+        className=" transition .5s"
         width={500}
         height={500}
         src={images[index % 2 ? 0 : 1]}
@@ -24,7 +25,7 @@ const ProductCard = ({ images, index }: any) => {
         <div className={styles.optionList}>
           <div className={styles.mark}>
             <MdFavoriteBorder />
-            <BsCartPlus />
+            <BsCartPlus title="افزودن به سبد خرید" />
           </div>
 
           <div className={styles.star}>

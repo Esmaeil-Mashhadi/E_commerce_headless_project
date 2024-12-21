@@ -14,8 +14,31 @@
   padding: 12px 5px;
   box-shadow: 5px 5px 20px var(--primaryColor);
   white-space: nowrap;
+  transition: .2s ease;
+  overflow: hidden;
+  transition: .2s ease;
+
 }
 
 .callToActionLink svg {
   scale: 1.5;
+}
+
+
+.callToActionLink::before{
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  transform: translateX(-100%);
+  background: var(--complementaryColor);
+  transition: .2s ease;
+}
+.callToActionLink:hover{
+  color: black ;
+  box-shadow: 0px 0px 5px var(--complementaryColor);
+}
+.callToActionLink:hover::before{
+  color: black;
+  transform: translateX(0%);
 }

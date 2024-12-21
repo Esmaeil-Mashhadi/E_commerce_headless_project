@@ -5,8 +5,8 @@ import { IoIosArrowDropright } from "react-icons/io"
 const CallToAction = () => {
   return (
     <Link className={styles.callToActionLink} href="/">
-      <IoIosArrowDropright />
-      <p>مشاهده ی تخفیفات </p>
+      <IoIosArrowDropright className=" z-10" />
+      <p className=" z-10">مشاهده ی تخفیفات </p>
     </Link>
   )
 }

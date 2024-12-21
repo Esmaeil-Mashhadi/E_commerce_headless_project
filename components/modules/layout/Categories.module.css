@@ -1,0 +1,37 @@
+.container {
+    width: 270px;
+    background: var(--whole-bg);
+    height: 90%;
+    align-self: flex-end;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    position:relative ;
+    color: black;
+    box-sizing: border-box;
+}
+
+.dropDownMenu{
+    position:absolute;
+    width: 100%;
+    left: 0px;
+    top: 50px;
+    height: var(--height);
+    background:var(--whole-bg);
+    color: black ;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    transition: .2s ease;
+    opacity: var(--opacity);
+    pointer-events: var(--event);
+
+}
+.dropDownMenu ul li{
+    padding: 0px 20px;
+}
+  

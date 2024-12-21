@@ -4,15 +4,16 @@
   padding: 16px;
   border-radius: 12px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.3s ease;
   position: relative;
   gap: 10px;
 }
 
-.container:hover {
+.container:hover img {
   transform: translateY(-8px);
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2), 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2)
 }
+
 
 .bottomSide {
   display: flex;
@@ -29,6 +30,8 @@
   font-weight: bold;
   font-size: 1.1rem;
 }
+
+
 .optionList {
   display: flex;
   align-items: center;
@@ -36,6 +39,13 @@
   padding: 0px 16px;
 }
 
+.mark svg{
+  cursor: pointer;
+  transition: .2s ease;
+}
+.mark svg:hover{
+  scale: 1.8;
+}
 .mark {
   display: flex;
   align-items: center;

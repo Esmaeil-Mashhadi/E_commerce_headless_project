@@ -35,7 +35,9 @@ const PopularCategories = () => {
       <div className="flex items-center justify-around w-full">
         {popularList.map((item: any, index: number) => (
           <Link key={index} href={item.url} className={styles.circle}>
-            <img  src={item.imageSrc} />
+            <div className={styles.imageBorder}>
+              <img src={item.imageSrc} />
+            </div>
             <p>{item.title}</p>
           </Link>
         ))}

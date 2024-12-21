@@ -14,6 +14,14 @@
   padding: 0px 10px;
 }
 
+
+
+.leftSide:hover {
+  scale: 0.9;
+  color: var(--complementaryColor);
+}
+
+
 .header {
   width: fit-content;
   font-size: 32px;
@@ -35,6 +43,7 @@
   height: 100%;
   justify-content: center;
   cursor: pointer;
+  transition: 0.2s ease;
 }
 
 .leftSide svg {
