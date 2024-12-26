@@ -1,14 +1,13 @@
-'use client'
 
 import { UnderLineSvg } from "@/public/svgs"
 import styles from "./DiscountSection.module.css"
 import Link from "next/link"
 import { FaArrowCircleRight } from "react-icons/fa"
-import { Swiper, SwiperSlide } from "swiper/react"
-import { Pagination } from "swiper/modules"
-import Image from "next/image"
+import DiscountSlide from "./submodules/DiscountSlide"
+import GetData from "@/utils/GetBoosBoosImages"
 
-const DiscountSection = () => {
+
+const DiscountSection = async() => {
   const discountImages = [
     "/images/sampleProduct/hoodip.webp",
     "/images/sampleProduct/tshirtP.jpg",
@@ -17,6 +16,10 @@ const DiscountSection = () => {
     "/images/sampleProduct/tshirtP.jpg",
     "/images/sampleProduct/tshirtP.jpg",
   ]
+
+
+  const data:any = await GetData('wp-json/wc/v3/products', 'on_sales=true')
+ 
   return (
     <div className={styles.container}>
       <h1 className={styles.header}>
@@ -29,28 +32,7 @@ const DiscountSection = () => {
           <FaArrowCircleRight />
         </div>
 
-        <div className={styles.rightSide}>
-          <Swiper
-            slidesPerView={3}
-            spaceBetween={30}
-            pagination={{
-              clickable: true,
-            }}
-            modules={[Pagination]}
-            className={styles.mySwiper}
-          >
-            {discountImages.map((item: any, index: number) => (
-              <SwiperSlide key={index}>
-                <Image
-                  src={item}
-                  width={500}
-                  height={500}
-                  alt="'discounted images"
-                />
-              </SwiperSlide>
-            ))}
-          </Swiper>
-        </div>
+        <DiscountSlide discountImages ={discountImages}/>
       </div>
     </div>
   )

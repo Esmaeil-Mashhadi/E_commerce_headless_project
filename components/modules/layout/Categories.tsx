@@ -14,6 +14,7 @@ const Categories = () => {
     "--opacity": drop ? "1" : "0",
     "--event": drop ? "auto" : "none",
   }
+
   return (
     <div
       onMouseEnter={dropDownHandler}
@@ -25,8 +26,11 @@ const Categories = () => {
           <PiListLight className="" />
           دسته بندی ها
         </div>
-        <MdKeyboardArrowUp   className={`scale-[1.5] transform ${drop ? 'rotate-180' : ''} transition duration-75`} 
- />
+        <MdKeyboardArrowUp
+          className={`scale-[1.5] transform ${
+            drop ? "rotate-180" : ""
+          } transition duration-75`}
+        />
       </div>
 
       <div style={dropStyle} className={styles.dropDownMenu}>

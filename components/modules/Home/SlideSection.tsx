@@ -19,6 +19,11 @@ const SlideSection = () => {
     { src: "/images/banner/4.png", alt: "سویت" },
   ]
 
+
+
+
+  
+
   const [discountImageIndex, setDiscountImageIndex] = useState(3)
 
   type sliderImagesType = {
@@ -88,6 +93,7 @@ const SlideSection = () => {
           ))}
         </Swiper>
       </div>
+
     </div>
   )
 }

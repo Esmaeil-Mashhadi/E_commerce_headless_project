@@ -1,46 +1,22 @@
-"use client"
-
 import Image from "next/image"
 import styles from "./Header.module.css"
-import { IoPersonOutline } from "react-icons/io5"
-import { BsCart3 } from "react-icons/bs"
-import Link from "next/link"
-import { ReactElement } from "react"
-import useScroll from "@/hooks/useScroll"
+
 import { FaHeadset } from "react-icons/fa"
 import { IoSyncCircleOutline } from "react-icons/io5"
 import { MdOutlineLocalShipping } from "react-icons/md"
-import Categories from "../modules/layout/Categories"
+import { ReactElement } from "react"
+import Menubar from "../modules/layout/Menubar"
+import GetData from "@/utils/GetBoosBoosImages"
 
-const Header = () => {
-  type iconsType = {
-    icon: ReactElement
-    title: string
-    href: string
-  }
-  type navbarMenuType = {
-    title: string
-    href: string
-  }
+const Header = async () => {
   type servicesMenuType = {
     title: string
     slogan: string
     icon: ReactElement
   }
 
-  const { scrollY } = useScroll()
 
-  const icons: iconsType[] = [
-    { icon: <IoPersonOutline />, title: "پروفایل", href: "/profile" },
-    { icon: <BsCart3 />, title: "سبد خرید", href: "/cart" },
-  ]
-
-  const navbarMenu: navbarMenuType[] = [
-    { title: "خانه", href: "/" },
-    { title: "فروشگاه", href: "/" },
-    { title: "ارتباط با ما", href: "/" },
-    { title: "تخفیفات شگفت انگیز", href: "/" },
-  ]
+  const categoriesList:any = await GetData('/wp-json/wc/v3/products/categories', 'per_page=100')
 
   const servicesMenu: servicesMenuType[] = [
     {
@@ -89,30 +65,7 @@ const Header = () => {
           ))}
         </div>
       </div>
-
-      <div
-        style={scrollY > 50 ? { top: 0 } : undefined}
-        className={styles.header}
-      >
-        <div className={styles.menuBar}>
-          <Categories />
-          <div className={styles.rightSide}>
-            {navbarMenu.map((item: navbarMenuType, index: number) => (
-              <Link key={index} href={item.href}>
-                {item.title}
-              </Link>
-            ))}
-          </div>
-          <div className={styles.leftSide}>
-            {icons.map((item: iconsType, index: number) => (
-              <Link key={index} href={item.href} title={item.title}>
-                <p>{item.icon}</p>
-                <p>{item.title}</p>
-              </Link>
-            ))}
-          </div>
-        </div>
-      </div>
+      <Menubar categoriesList={categoriesList} />
     </div>
   )
 }

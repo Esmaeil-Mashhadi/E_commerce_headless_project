@@ -11,7 +11,6 @@ export default function useScroll() {
     return () => {window.removeEventListener("scroll", handleScroll), handleScroll()}
 
   }, [])
-  console.log(scrollY)
 
   return { scrollY }
 }
